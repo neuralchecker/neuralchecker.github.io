@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>utilities package &#8212; pythautomata 0.1.0 documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="model_exporters package" href="model_exporters.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="model_exporters.html" title="model_exporters package"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">pythautomata 0.1.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">utilities package</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-utilities">
+<span id="utilities-package"></span><h1>utilities package<a class="headerlink" href="#module-utilities" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="utilities-abbadingo-one-dfa-generator-module">
+<h2>utilities.abbadingo_one_dfa_generator module<a class="headerlink" href="#utilities-abbadingo-one-dfa-generator-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-utilities.automata_convertor">
+<span id="utilities-automata-convertor-module"></span><h2>utilities.automata_convertor module<a class="headerlink" href="#module-utilities.automata_convertor" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="utilities.automata_convertor.AutomataConvertor">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">utilities.automata_convertor.</span></code><code class="sig-name descname"><span class="pre">AutomataConvertor</span></code><a class="headerlink" href="#utilities.automata_convertor.AutomataConvertor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="utilities.automata_convertor.AutomataConvertor.convert_nfa_to_dfa">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">convert_nfa_to_dfa</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">non_deterministic_finite_automaton</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="automata.html#automata.non_deterministic_finite_automaton.NondeterministicFiniteAutomaton" title="automata.non_deterministic_finite_automaton.NondeterministicFiniteAutomaton"><span class="pre">automata.non_deterministic_finite_automaton.NondeterministicFiniteAutomaton</span></a></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="automata.html#automata.deterministic_finite_automaton.DeterministicFiniteAutomaton" title="automata.deterministic_finite_automaton.DeterministicFiniteAutomaton"><span class="pre">automata.deterministic_finite_automaton.DeterministicFiniteAutomaton</span></a><a class="headerlink" href="#utilities.automata_convertor.AutomataConvertor.convert_nfa_to_dfa" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts a given non deterministic finite automaton into a deterministic finite automaton.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>non_deterministic_finite_automaton (NFA): Input non deterministic finite automaton.</p>
+</dd>
+<dt>Returns:</dt><dd><p>DFA: DFA equivalent to the inputted NFA.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-utilities.dfa_minimizer">
+<span id="utilities-dfa-minimizer-module"></span><h2>utilities.dfa_minimizer module<a class="headerlink" href="#module-utilities.dfa_minimizer" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="utilities.dfa_minimizer.DFAMinimizer">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">utilities.dfa_minimizer.</span></code><code class="sig-name descname"><span class="pre">DFAMinimizer</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dfa</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="automata.html#automata.deterministic_finite_automaton.DeterministicFiniteAutomaton" title="automata.deterministic_finite_automaton.DeterministicFiniteAutomaton"><span class="pre">automata.deterministic_finite_automaton.DeterministicFiniteAutomaton</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utilities.dfa_minimizer.DFAMinimizer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="utilities.dfa_minimizer.DFAMinimizer.minimize">
+<code class="sig-name descname"><span class="pre">minimize</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="automata.html#automata.deterministic_finite_automaton.DeterministicFiniteAutomaton" title="automata.deterministic_finite_automaton.DeterministicFiniteAutomaton"><span class="pre">automata.deterministic_finite_automaton.DeterministicFiniteAutomaton</span></a><a class="headerlink" href="#utilities.dfa_minimizer.DFAMinimizer.minimize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Minimizes DFA.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A minimized DFA</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>DFA</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-utilities.dfa_operations">
+<span id="utilities-dfa-operations-module"></span><h2>utilities.dfa_operations module<a class="headerlink" href="#module-utilities.dfa_operations" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="utilities.dfa_operations.join_DFA_set">
+<code class="sig-prename descclassname"><span class="pre">utilities.dfa_operations.</span></code><code class="sig-name descname"><span class="pre">join_DFA_set</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dfaSet</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">set</span></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="automata.html#automata.deterministic_finite_automaton.DeterministicFiniteAutomaton" title="automata.deterministic_finite_automaton.DeterministicFiniteAutomaton"><span class="pre">automata.deterministic_finite_automaton.DeterministicFiniteAutomaton</span></a><a class="headerlink" href="#utilities.dfa_operations.join_DFA_set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function implementing DFA join of a whole set of DFAs.
+The join between DFAs is a new DFA that recognizes words belonging to languages of all of the DFAs at the same time.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>dfaSet (set[DFA]): A set of DFAs.</p>
+</dd>
+<dt>Returns:</dt><dd><p>DFA: A DFA containing words that are accepted by all of the DFAs in the set.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="utilities.dfa_operations.join_DFAs">
+<code class="sig-prename descclassname"><span class="pre">utilities.dfa_operations.</span></code><code class="sig-name descname"><span class="pre">join_DFAs</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dfa1</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="automata.html#automata.deterministic_finite_automaton.DeterministicFiniteAutomaton" title="automata.deterministic_finite_automaton.DeterministicFiniteAutomaton"><span class="pre">automata.deterministic_finite_automaton.DeterministicFiniteAutomaton</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">dfa2</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="automata.html#automata.deterministic_finite_automaton.DeterministicFiniteAutomaton" title="automata.deterministic_finite_automaton.DeterministicFiniteAutomaton"><span class="pre">automata.deterministic_finite_automaton.DeterministicFiniteAutomaton</span></a></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="automata.html#automata.deterministic_finite_automaton.DeterministicFiniteAutomaton" title="automata.deterministic_finite_automaton.DeterministicFiniteAutomaton"><span class="pre">automata.deterministic_finite_automaton.DeterministicFiniteAutomaton</span></a><a class="headerlink" href="#utilities.dfa_operations.join_DFAs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function implementing DFA join.
+The join between two DFAs is a new DFA that recognizes only words belonging to languages of both DFAs at the same time.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>dfa1 (DFA): A DFA.
+dfa2 (DFA): Another DFA.</p>
+</dd>
+<dt>Returns:</dt><dd><p>DFA: A DFA containing words that are accepted by dfa1 and dfa2 at the same time.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="utilities.dfa_operations.union_DFA_set">
+<code class="sig-prename descclassname"><span class="pre">utilities.dfa_operations.</span></code><code class="sig-name descname"><span class="pre">union_DFA_set</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dfaSet</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">set</span></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="automata.html#automata.deterministic_finite_automaton.DeterministicFiniteAutomaton" title="automata.deterministic_finite_automaton.DeterministicFiniteAutomaton"><span class="pre">automata.deterministic_finite_automaton.DeterministicFiniteAutomaton</span></a><a class="headerlink" href="#utilities.dfa_operations.union_DFA_set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function implementing DFA union of a whole set of DFAs.
+The union between DFAs is a new DFA that recognizes words belonging to languages of any of the DFAs.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>dfaSet (set[DFA]): A set of DFAs.</p>
+</dd>
+<dt>Returns:</dt><dd><p>DFA: A DFA containing words that are accepted by any of the DFAs in the set.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="utilities.dfa_operations.union_DFAs">
+<code class="sig-prename descclassname"><span class="pre">utilities.dfa_operations.</span></code><code class="sig-name descname"><span class="pre">union_DFAs</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dfa1</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="automata.html#automata.deterministic_finite_automaton.DeterministicFiniteAutomaton" title="automata.deterministic_finite_automaton.DeterministicFiniteAutomaton"><span class="pre">automata.deterministic_finite_automaton.DeterministicFiniteAutomaton</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">dfa2</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="automata.html#automata.deterministic_finite_automaton.DeterministicFiniteAutomaton" title="automata.deterministic_finite_automaton.DeterministicFiniteAutomaton"><span class="pre">automata.deterministic_finite_automaton.DeterministicFiniteAutomaton</span></a></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="automata.html#automata.deterministic_finite_automaton.DeterministicFiniteAutomaton" title="automata.deterministic_finite_automaton.DeterministicFiniteAutomaton"><span class="pre">automata.deterministic_finite_automaton.DeterministicFiniteAutomaton</span></a><a class="headerlink" href="#utilities.dfa_operations.union_DFAs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function implementing DFA union.
+The union between two DFAs is a new DFA that recognizes words belonging to languages of any of the DFAs.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>dfa1 (DFA): A DFA.
+dfa2 (DFA): Another DFA.</p>
+</dd>
+<dt>Returns:</dt><dd><p>DFA: A DFA containing words that are accepted by dfa1 or dfa2.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-utilities.encoded_file_importer">
+<span id="utilities-encoded-file-importer-module"></span><h2>utilities.encoded_file_importer module<a class="headerlink" href="#module-utilities.encoded_file_importer" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="utilities.encoded_file_importer.EncodedFileImporter">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">utilities.encoded_file_importer.</span></code><code class="sig-name descname"><span class="pre">EncodedFileImporter</span></code><a class="headerlink" href="#utilities.encoded_file_importer.EncodedFileImporter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="utilities.encoded_file_importer.EncodedFileImporter.import_generated_automata">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">import_generated_automata</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utilities.encoded_file_importer.EncodedFileImporter.import_generated_automata" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-utilities.simple_dfa_generator">
+<span id="utilities-simple-dfa-generator-module"></span><h2>utilities.simple_dfa_generator module<a class="headerlink" href="#module-utilities.simple_dfa_generator" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="utilities.simple_dfa_generator.generate_dfa">
+<code class="sig-prename descclassname"><span class="pre">utilities.simple_dfa_generator.</span></code><code class="sig-name descname"><span class="pre">generate_dfa</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">alphabet:</span> <span class="pre">base_types.alphabet.Alphabet,</span> <span class="pre">number_of_states:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">200,</span> <span class="pre">exporting_strategies=[&lt;model_exporters.image_exporting_strategy.ImageExportingStrategy</span> <span class="pre">object&gt;]</span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="automata.html#automata.deterministic_finite_automaton.DeterministicFiniteAutomaton" title="automata.deterministic_finite_automaton.DeterministicFiniteAutomaton"><span class="pre">automata.deterministic_finite_automaton.DeterministicFiniteAutomaton</span></a><a class="headerlink" href="#utilities.simple_dfa_generator.generate_dfa" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function returning a randomly generated DFA, with random transitions to other states and equal probability of being a final state or not.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>alphabet (Alphabet): DFA alphabet.
+number_of_states (int, optional): Number of states the generated DFA.. Defaults to 200.
+exporting_strategies (list, optional): ExportingStrategy for the generated DFA. Defaults to [ImageExportingStrategy()].</p>
+</dd>
+<dt>Returns:</dt><dd><p>DFA: Random DFA with number of states = number_of_states and exporting strategies = exporting_strategies.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="utilities.simple_dfa_generator.getrandbits">
+<code class="sig-prename descclassname"><span class="pre">utilities.simple_dfa_generator.</span></code><code class="sig-name descname"><span class="pre">getrandbits</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">k</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">x.</span>&#160; <span class="pre">Generates</span> <span class="pre">an</span> <span class="pre">int</span> <span class="pre">with</span> <span class="pre">k</span> <span class="pre">random</span> <span class="pre">bits.</span><a class="headerlink" href="#utilities.simple_dfa_generator.getrandbits" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">utilities package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#utilities-abbadingo-one-dfa-generator-module">utilities.abbadingo_one_dfa_generator module</a></li>
+<li><a class="reference internal" href="#module-utilities.automata_convertor">utilities.automata_convertor module</a></li>
+<li><a class="reference internal" href="#module-utilities.dfa_minimizer">utilities.dfa_minimizer module</a></li>
+<li><a class="reference internal" href="#module-utilities.dfa_operations">utilities.dfa_operations module</a></li>
+<li><a class="reference internal" href="#module-utilities.encoded_file_importer">utilities.encoded_file_importer module</a></li>
+<li><a class="reference internal" href="#module-utilities.simple_dfa_generator">utilities.simple_dfa_generator module</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="model_exporters.html"
+                        title="previous chapter">model_exporters package</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/utilities.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="model_exporters.html" title="model_exporters package"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">pythautomata 0.1.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">utilities package</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2021, Franz Mayr, Federico Vilensky.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.5.1.
+    </div>
+  </body>
+</html>

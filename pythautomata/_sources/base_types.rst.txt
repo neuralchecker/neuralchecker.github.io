@@ -1,0 +1,42 @@
+base\_types package
+===================
+
+.. automodule:: base_types
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Submodules
+----------
+
+base\_types.alphabet module
+---------------------------
+
+.. automodule:: base_types.alphabet
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+base\_types.sequence module
+---------------------------
+
+.. automodule:: base_types.sequence
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+base\_types.state module
+------------------------
+
+.. automodule:: base_types.state
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+base\_types.symbol module
+-------------------------
+
+.. automodule:: base_types.symbol
+   :members:
+   :undoc-members:
+   :show-inheritance:

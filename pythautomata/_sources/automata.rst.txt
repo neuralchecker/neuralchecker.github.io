@@ -1,0 +1,26 @@
+automata package
+================
+
+.. automodule:: automata
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Submodules
+----------
+
+automata.deterministic\_finite\_automaton module
+------------------------------------------------
+
+.. automodule:: automata.deterministic_finite_automaton
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+automata.non\_deterministic\_finite\_automaton module
+-----------------------------------------------------
+
+.. automodule:: automata.non_deterministic_finite_automaton
+   :members:
+   :undoc-members:
+   :show-inheritance:

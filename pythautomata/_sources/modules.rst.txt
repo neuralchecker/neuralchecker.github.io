@@ -1,0 +1,11 @@
+pythautomata
+============
+
+.. toctree::
+   :maxdepth: 20
+
+   automata
+   automata_definitions
+   base_types
+   model_exporters
+   utilities

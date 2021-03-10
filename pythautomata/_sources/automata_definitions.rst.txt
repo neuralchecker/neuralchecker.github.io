@@ -1,0 +1,58 @@
+automata\_definitions package
+=============================
+
+.. automodule:: automata_definitions
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Submodules
+----------
+
+automata\_definitions.bollig\_habermehl\_kern\_leucker\_automata module
+-----------------------------------------------------------------------
+
+.. automodule:: automata_definitions.bollig_habermehl_kern_leucker_automata
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+automata\_definitions.omlin\_giles\_automata module
+---------------------------------------------------
+
+.. automodule:: automata_definitions.omlin_giles_automata
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+automata\_definitions.other\_automata module
+--------------------------------------------
+
+.. automodule:: automata_definitions.other_automata
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+automata\_definitions.sample\_nfas module
+-----------------------------------------
+
+.. automodule:: automata_definitions.sample_nfas
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+automata\_definitions.tomitas\_grammar\_modifications module
+------------------------------------------------------------
+
+.. automodule:: automata_definitions.tomitas_grammar_modifications
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+automata\_definitions.tomitas\_grammars module
+----------------------------------------------
+
+.. automodule:: automata_definitions.tomitas_grammars
+   :members:
+   :undoc-members:
+   :show-inheritance:

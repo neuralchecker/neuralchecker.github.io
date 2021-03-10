@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>automata package &#8212; pythautomata 0.1.0 documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="automata_definitions package" href="automata_definitions.html" />
+    <link rel="prev" title="Welcome to pythautomata’s documentation!" href="index.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="automata_definitions.html" title="automata_definitions package"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to pythautomata’s documentation!"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">pythautomata 0.1.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">automata package</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-automata">
+<span id="automata-package"></span><h1>automata package<a class="headerlink" href="#module-automata" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-automata.deterministic_finite_automaton">
+<span id="automata-deterministic-finite-automaton-module"></span><h2>automata.deterministic_finite_automaton module<a class="headerlink" href="#module-automata.deterministic_finite_automaton" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="automata.deterministic_finite_automaton.DeterministicFiniteAutomaton">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">automata.deterministic_finite_automaton.</span></code><code class="sig-name descname"><span class="pre">DeterministicFiniteAutomaton</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">alphabet:</span> <span class="pre">base_types.alphabet.Alphabet,</span> <span class="pre">initial_state:</span> <span class="pre">base_types.state.State,</span> <span class="pre">states:</span> <span class="pre">set,</span> <span class="pre">comparator:</span> <span class="pre">abstract.finite_automata_comparator.FiniteAutomataComparator,</span> <span class="pre">name:</span> <span class="pre">Optional[str]</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">exportingStrategies:</span> <span class="pre">list</span> <span class="pre">=</span> <span class="pre">[&lt;model_exporters.encoded_file_exporting_strategy.EncodedFileExportingStrategy</span> <span class="pre">object&gt;],</span> <span class="pre">hole:</span> <span class="pre">base_types.state.State</span> <span class="pre">=</span> <span class="pre">Hole</span> <span class="pre">(Non-final)</span></em><span class="sig-paren">)</span><a class="headerlink" href="#automata.deterministic_finite_automaton.DeterministicFiniteAutomaton" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">abstract.finite_automaton.FiniteAutomaton</span></code></p>
+<p>Implementation of DFA.</p>
+<dl class="py attribute">
+<dt id="automata.deterministic_finite_automaton.DeterministicFiniteAutomaton.states">
+<code class="sig-name descname"><span class="pre">states</span></code><a class="headerlink" href="#automata.deterministic_finite_automaton.DeterministicFiniteAutomaton.states" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set containing the DFA’s states</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>set[<a class="reference internal" href="base_types.html#base_types.state.State" title="base_types.state.State">State</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="automata.deterministic_finite_automaton.DeterministicFiniteAutomaton.initial_state">
+<code class="sig-name descname"><span class="pre">initial_state</span></code><a class="headerlink" href="#automata.deterministic_finite_automaton.DeterministicFiniteAutomaton.initial_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initial state of the DFA. Also included in “states”</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="base_types.html#base_types.state.State" title="base_types.state.State">State</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="automata.deterministic_finite_automaton.DeterministicFiniteAutomaton.accepts">
+<code class="sig-name descname"><span class="pre">accepts</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="base_types.html#base_types.sequence.Sequence" title="base_types.sequence.Sequence"><span class="pre">base_types.sequence.Sequence</span></a></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">bool</span><a class="headerlink" href="#automata.deterministic_finite_automaton.DeterministicFiniteAutomaton.accepts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-automata.non_deterministic_finite_automaton">
+<span id="automata-non-deterministic-finite-automaton-module"></span><h2>automata.non_deterministic_finite_automaton module<a class="headerlink" href="#module-automata.non_deterministic_finite_automaton" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="automata.non_deterministic_finite_automaton.ExecutionState">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">automata.non_deterministic_finite_automaton.</span></code><code class="sig-name descname"><span class="pre">ExecutionState</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">state</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sequence</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#automata.non_deterministic_finite_automaton.ExecutionState" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></p>
+<dl class="py attribute">
+<dt id="automata.non_deterministic_finite_automaton.ExecutionState.sequence">
+<code class="sig-name descname"><span class="pre">sequence</span></code><a class="headerlink" href="#automata.non_deterministic_finite_automaton.ExecutionState.sequence" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 1</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="automata.non_deterministic_finite_automaton.ExecutionState.state">
+<code class="sig-name descname"><span class="pre">state</span></code><a class="headerlink" href="#automata.non_deterministic_finite_automaton.ExecutionState.state" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 0</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="automata.non_deterministic_finite_automaton.NondeterministicFiniteAutomaton">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">automata.non_deterministic_finite_automaton.</span></code><code class="sig-name descname"><span class="pre">NondeterministicFiniteAutomaton</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">alphabet:</span> <span class="pre">base_types.alphabet.Alphabet,</span> <span class="pre">initial_states:</span> <span class="pre">frozenset,</span> <span class="pre">states:</span> <span class="pre">set,</span> <span class="pre">comparator:</span> <span class="pre">abstract.finite_automata_comparator.FiniteAutomataComparator,</span> <span class="pre">name:</span> <span class="pre">Optional[str]</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">exportingStrategies:</span> <span class="pre">list</span> <span class="pre">=</span> <span class="pre">[&lt;model_exporters.encoded_file_exporting_strategy.EncodedFileExportingStrategy</span> <span class="pre">object&gt;],</span> <span class="pre">hole:</span> <span class="pre">base_types.state.State</span> <span class="pre">=</span> <span class="pre">Hole</span> <span class="pre">(Non-final)</span></em><span class="sig-paren">)</span><a class="headerlink" href="#automata.non_deterministic_finite_automaton.NondeterministicFiniteAutomaton" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">abstract.finite_automaton.FiniteAutomaton</span></code></p>
+<p>Implementation of NFA.</p>
+<dl class="py attribute">
+<dt id="automata.non_deterministic_finite_automaton.NondeterministicFiniteAutomaton.states">
+<code class="sig-name descname"><span class="pre">states</span></code><a class="headerlink" href="#automata.non_deterministic_finite_automaton.NondeterministicFiniteAutomaton.states" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set containing the DFA’s states</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>set[<a class="reference internal" href="base_types.html#base_types.state.State" title="base_types.state.State">State</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="automata.non_deterministic_finite_automaton.NondeterministicFiniteAutomaton.initial_states">
+<code class="sig-name descname"><span class="pre">initial_states</span></code><a class="headerlink" href="#automata.non_deterministic_finite_automaton.NondeterministicFiniteAutomaton.initial_states" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set containing all initial states of the NFA. Also included in “states”</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>frozenset[<a class="reference internal" href="base_types.html#base_types.state.State" title="base_types.state.State">State</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="automata.non_deterministic_finite_automaton.NondeterministicFiniteAutomaton.accepts">
+<code class="sig-name descname"><span class="pre">accepts</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="base_types.html#base_types.sequence.Sequence" title="base_types.sequence.Sequence"><span class="pre">base_types.sequence.Sequence</span></a></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">bool</span><a class="headerlink" href="#automata.non_deterministic_finite_automaton.NondeterministicFiniteAutomaton.accepts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">automata package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-automata.deterministic_finite_automaton">automata.deterministic_finite_automaton module</a></li>
+<li><a class="reference internal" href="#module-automata.non_deterministic_finite_automaton">automata.non_deterministic_finite_automaton module</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Welcome to pythautomata’s documentation!</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="automata_definitions.html"
+                        title="next chapter">automata_definitions package</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/automata.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="automata_definitions.html" title="automata_definitions package"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to pythautomata’s documentation!"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">pythautomata 0.1.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">automata package</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2021, Franz Mayr, Federico Vilensky.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.5.1.
+    </div>
+  </body>
+</html>

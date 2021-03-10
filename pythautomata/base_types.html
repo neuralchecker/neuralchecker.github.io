@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>base_types package &#8212; pythautomata 0.1.0 documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="model_exporters package" href="model_exporters.html" />
+    <link rel="prev" title="automata_definitions package" href="automata_definitions.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="model_exporters.html" title="model_exporters package"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="automata_definitions.html" title="automata_definitions package"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">pythautomata 0.1.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">base_types package</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-base_types">
+<span id="base-types-package"></span><h1>base_types package<a class="headerlink" href="#module-base_types" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-base_types.alphabet">
+<span id="base-types-alphabet-module"></span><h2>base_types.alphabet module<a class="headerlink" href="#module-base_types.alphabet" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="base_types.alphabet.Alphabet">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">base_types.alphabet.</span></code><code class="sig-name descname"><span class="pre">Alphabet</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">symbols</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">frozenset</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#base_types.alphabet.Alphabet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Set of Symbols.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-base_types.sequence">
+<span id="base-types-sequence-module"></span><h2>base_types.sequence module<a class="headerlink" href="#module-base_types.sequence" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="base_types.sequence.Sequence">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">base_types.sequence.</span></code><code class="sig-name descname"><span class="pre">Sequence</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">list</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">[]</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#base_types.sequence.Sequence" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Ordered collection of Symbols.</p>
+<dl class="py method">
+<dt id="base_types.sequence.Sequence.append">
+<code class="sig-name descname"><span class="pre">append</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">symbol_to_append</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#base_types.symbol.Symbol" title="base_types.symbol.Symbol"><span class="pre">base_types.symbol.Symbol</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#base_types.sequence.Sequence.append" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="base_types.sequence.Sequence.get_prefixes">
+<code class="sig-name descname"><span class="pre">get_prefixes</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">set</span><a class="headerlink" href="#base_types.sequence.Sequence.get_prefixes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="base_types.sequence.Sequence.get_suffixes">
+<code class="sig-name descname"><span class="pre">get_suffixes</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">set</span><a class="headerlink" href="#base_types.sequence.Sequence.get_suffixes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="base_types.sequence.Sequence.value">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">value</span></code><a class="headerlink" href="#base_types.sequence.Sequence.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-base_types.state">
+<span id="base-types-state-module"></span><h2>base_types.state module<a class="headerlink" href="#module-base_types.state" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="base_types.state.State">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">base_types.state.</span></code><code class="sig-name descname"><span class="pre">State</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_final</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">bool</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#base_types.state.State" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Representation of NFA or DFA states.</p>
+<dl class="py attribute">
+<dt id="base_types.state.State.name">
+<code class="sig-name descname"><span class="pre">name</span></code><a class="headerlink" href="#base_types.state.State.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>State name.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="base_types.state.State.is_final">
+<code class="sig-name descname"><span class="pre">is_final</span></code><a class="headerlink" href="#base_types.state.State.is_final" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determines if the state is final.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="base_types.state.State.transitions">
+<code class="sig-name descname"><span class="pre">transitions</span></code><a class="headerlink" href="#base_types.state.State.transitions" title="Permalink to this definition">¶</a></dt>
+<dd><p>For any given symbol represents the next state (or set of states in the case of NFA).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>dict[<a class="reference internal" href="#base_types.symbol.Symbol" title="base_types.symbol.Symbol">Symbol</a>, set[‘State’]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="base_types.state.State.hole">
+<code class="sig-name descname"><span class="pre">hole</span></code><a class="headerlink" href="#base_types.state.State.hole" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hole state, state containing all transitions directed to itself.
+It is used as default when a symbol is not present as transition key.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#base_types.state.State" title="base_types.state.State">base_types.state.State</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="base_types.state.State.add_hole_transition">
+<code class="sig-name descname"><span class="pre">add_hole_transition</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hole</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#base_types.state.State" title="base_types.state.State"><span class="pre">base_types.state.State</span></a></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#base_types.state.State.add_hole_transition" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="base_types.state.State.add_multiple_transitions">
+<code class="sig-name descname"><span class="pre">add_multiple_transitions</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">symbol</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#base_types.symbol.Symbol" title="base_types.symbol.Symbol"><span class="pre">base_types.symbol.Symbol</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">next_states</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">list</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#base_types.state.State.add_multiple_transitions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="base_types.state.State.add_transition">
+<code class="sig-name descname"><span class="pre">add_transition</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">symbol</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#base_types.symbol.Symbol" title="base_types.symbol.Symbol"><span class="pre">base_types.symbol.Symbol</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">next_state</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#base_types.state.State" title="base_types.state.State"><span class="pre">base_types.state.State</span></a></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#base_types.state.State.add_transition" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="id0">
+<code class="sig-name descname"><span class="pre">hole</span></code><em class="property"><span class="pre">:</span> <a class="reference internal" href="#base_types.state.State" title="base_types.state.State"><span class="pre">base_types.state.State</span></a></em><a class="headerlink" href="#id0" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="base_types.state.State.is_deterministic">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">is_deterministic</span></code><a class="headerlink" href="#base_types.state.State.is_deterministic" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="base_types.state.State.next_state_for">
+<code class="sig-name descname"><span class="pre">next_state_for</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">symbol</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#base_types.symbol.Symbol" title="base_types.symbol.Symbol"><span class="pre">base_types.symbol.Symbol</span></a></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#base_types.state.State" title="base_types.state.State"><span class="pre">base_types.state.State</span></a><a class="headerlink" href="#base_types.state.State.next_state_for" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="base_types.state.State.next_states_for">
+<code class="sig-name descname"><span class="pre">next_states_for</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">symbol</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#base_types.symbol.Symbol" title="base_types.symbol.Symbol"><span class="pre">base_types.symbol.Symbol</span></a></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">set</span><a class="headerlink" href="#base_types.state.State.next_states_for" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-base_types.symbol">
+<span id="base-types-symbol-module"></span><h2>base_types.symbol module<a class="headerlink" href="#module-base_types.symbol" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="base_types.symbol.Symbol">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">base_types.symbol.</span></code><code class="sig-name descname"><span class="pre">Symbol</span></code><a class="headerlink" href="#base_types.symbol.Symbol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></p>
+<p>Abstract class representing symbols.</p>
+<dl class="py method">
+<dt id="base_types.symbol.Symbol.value">
+<em class="property"><span class="pre">abstract</span> <span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">value</span></code><a class="headerlink" href="#base_types.symbol.Symbol.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="base_types.symbol.SymbolStr">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">base_types.symbol.</span></code><code class="sig-name descname"><span class="pre">SymbolStr</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#base_types.symbol.SymbolStr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#base_types.symbol.Symbol" title="base_types.symbol.Symbol"><code class="xref py py-class docutils literal notranslate"><span class="pre">base_types.symbol.Symbol</span></code></a></p>
+<p>Symbol specification using string as a representation.</p>
+<dl class="py method">
+<dt id="base_types.symbol.SymbolStr.value">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">value</span></code><a class="headerlink" href="#base_types.symbol.SymbolStr.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">base_types package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-base_types.alphabet">base_types.alphabet module</a></li>
+<li><a class="reference internal" href="#module-base_types.sequence">base_types.sequence module</a></li>
+<li><a class="reference internal" href="#module-base_types.state">base_types.state module</a></li>
+<li><a class="reference internal" href="#module-base_types.symbol">base_types.symbol module</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="automata_definitions.html"
+                        title="previous chapter">automata_definitions package</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="model_exporters.html"
+                        title="next chapter">model_exporters package</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/base_types.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="model_exporters.html" title="model_exporters package"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="automata_definitions.html" title="automata_definitions package"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">pythautomata 0.1.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">base_types package</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2021, Franz Mayr, Federico Vilensky.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.5.1.
+    </div>
+  </body>
+</html>

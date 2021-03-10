@@ -1,0 +1,723 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>automata_definitions package &#8212; pythautomata 0.1.0 documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="base_types package" href="base_types.html" />
+    <link rel="prev" title="automata package" href="automata.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="base_types.html" title="base_types package"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="automata.html" title="automata package"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">pythautomata 0.1.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">automata_definitions package</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-automata_definitions">
+<span id="automata-definitions-package"></span><h1>automata_definitions package<a class="headerlink" href="#module-automata_definitions" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-automata_definitions.bollig_habermehl_kern_leucker_automata">
+<span id="automata-definitions-bollig-habermehl-kern-leucker-automata-module"></span><h2>automata_definitions.bollig_habermehl_kern_leucker_automata module<a class="headerlink" href="#module-automata_definitions.bollig_habermehl_kern_leucker_automata" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="automata_definitions.bollig_habermehl_kern_leucker_automata.BolligHabermehlKernLeuckerAutomata">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">automata_definitions.bollig_habermehl_kern_leucker_automata.</span></code><code class="sig-name descname"><span class="pre">BolligHabermehlKernLeuckerAutomata</span></code><a class="headerlink" href="#automata_definitions.bollig_habermehl_kern_leucker_automata.BolligHabermehlKernLeuckerAutomata" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="simple">
+<dt>Class containing automata from paper:</dt><dd><p>Bollig B. and Habermehl P. and Kern C. and Leucker M. 2009.
+Angluin-style learning of NFA.
+IJCAI International Joint Conference on Artificial Intelligence. 1004-1009.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt>
+<code class="sig-name descname"><span class="pre">get_all_automata:</span> <span class="pre">list(FiniteAutomaton)</span></code></dt>
+<dd><p>returns a list containing all automata defined in this class</p>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname"><span class="pre">get_first_example_DFA:</span> <span class="pre">DeterministicFiniteAutomaton</span></code></dt>
+<dd><p>returns the automaton 1 from the paper</p>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname"><span class="pre">get_first_example_NFA:</span> <span class="pre">NondeterministicFiniteAutomaton</span></code></dt>
+<dd><p>returns the automaton 2 from the paper</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.bollig_habermehl_kern_leucker_automata.BolligHabermehlKernLeuckerAutomata.get_all_automata">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_all_automata</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.bollig_habermehl_kern_leucker_automata.BolligHabermehlKernLeuckerAutomata.get_all_automata" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method returning a list of all automata of the class</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>all automata defined in the class</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list(FiniteAutomaton)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.bollig_habermehl_kern_leucker_automata.BolligHabermehlKernLeuckerAutomata.get_first_example_DFA">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_first_example_DFA</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="automata.html#automata.deterministic_finite_automaton.DeterministicFiniteAutomaton" title="automata.deterministic_finite_automaton.DeterministicFiniteAutomaton"><span class="pre">automata.deterministic_finite_automaton.DeterministicFiniteAutomaton</span></a><a class="headerlink" href="#automata_definitions.bollig_habermehl_kern_leucker_automata.BolligHabermehlKernLeuckerAutomata.get_first_example_DFA" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method returning a DFA that recognizes the regular expresion Σ*aΣ^2 (First example from paper, Fig. 3.)</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>DFA: Method returning a DFA that recognizes the regular expresion Σ*aΣ^2</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.bollig_habermehl_kern_leucker_automata.BolligHabermehlKernLeuckerAutomata.get_first_example_NFA">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_first_example_NFA</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="automata.html#automata.deterministic_finite_automaton.DeterministicFiniteAutomaton" title="automata.deterministic_finite_automaton.DeterministicFiniteAutomaton"><span class="pre">automata.deterministic_finite_automaton.DeterministicFiniteAutomaton</span></a><a class="headerlink" href="#automata_definitions.bollig_habermehl_kern_leucker_automata.BolligHabermehlKernLeuckerAutomata.get_first_example_NFA" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method returning a NFA that recognizes the regular expresion Σ*aΣ^2 (First example from paper, Fig. 4.)</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>DFA: Method returning a DFA that recognizes the regular expresion Σ*aΣ^2</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-automata_definitions.omlin_giles_automata">
+<span id="automata-definitions-omlin-giles-automata-module"></span><h2>automata_definitions.omlin_giles_automata module<a class="headerlink" href="#module-automata_definitions.omlin_giles_automata" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="automata_definitions.omlin_giles_automata.OmlinGilesAutomata">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">automata_definitions.omlin_giles_automata.</span></code><code class="sig-name descname"><span class="pre">OmlinGilesAutomata</span></code><a class="headerlink" href="#automata_definitions.omlin_giles_automata.OmlinGilesAutomata" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="simple">
+<dt>Class containing automata from paper:</dt><dd><p>Christian W. Omlin and C. Lee Giles. 1996.
+Constructing deterministic finite-state automata in recurrent neural networks.
+J. ACM 43, 6 (Nov. 1996), 937–972. DOI:https://doi.org/10.1145/235809.235811</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt>
+<code class="sig-name descname"><span class="pre">get_all_automata:</span> <span class="pre">list(DeterministicFiniteAutomaton)</span></code></dt>
+<dd><p>returns a list containing all automata defined in this class</p>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname"><span class="pre">get_a_automaton:</span> <span class="pre">DeterministicFiniteAutomaton</span></code></dt>
+<dd><p>returns the automaton A from the paper</p>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname"><span class="pre">get_b_automaton:</span> <span class="pre">DeterministicFiniteAutomaton</span></code></dt>
+<dd><p>returns the automaton B from the paper</p>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname"><span class="pre">get_az_automaton:</span> <span class="pre">DeterministicFiniteAutomaton</span></code></dt>
+<dd><p>returns the automaton A from the paper with stuttering symbol (d)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname"><span class="pre">get_bz_automaton:</span> <span class="pre">DeterministicFiniteAutomaton</span></code></dt>
+<dd><p>returns the automaton A from the paper with stuttering symbol (d)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.omlin_giles_automata.OmlinGilesAutomata.get_a_automaton">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_a_automaton</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.omlin_giles_automata.OmlinGilesAutomata.get_a_automaton" title="Permalink to this definition">¶</a></dt>
+<dd><p>method with specification of the automaton A from the paper</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>automaton A from the paper</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="automata.html#automata.deterministic_finite_automaton.DeterministicFiniteAutomaton" title="automata.deterministic_finite_automaton.DeterministicFiniteAutomaton">DeterministicFiniteAutomaton</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.omlin_giles_automata.OmlinGilesAutomata.get_all_automata">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_all_automata</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.omlin_giles_automata.OmlinGilesAutomata.get_all_automata" title="Permalink to this definition">¶</a></dt>
+<dd><p>method returning a list of all automata of the class</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>all automata defined in the class</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list(<a class="reference internal" href="automata.html#automata.deterministic_finite_automaton.DeterministicFiniteAutomaton" title="automata.deterministic_finite_automaton.DeterministicFiniteAutomaton">DeterministicFiniteAutomaton</a>)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.omlin_giles_automata.OmlinGilesAutomata.get_az_automaton">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_az_automaton</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.omlin_giles_automata.OmlinGilesAutomata.get_az_automaton" title="Permalink to this definition">¶</a></dt>
+<dd><p>method with specification of the automaton A from the paper, with a stuttering symbol</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>automaton A from the paper, with a stuttering symbol</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="automata.html#automata.deterministic_finite_automaton.DeterministicFiniteAutomaton" title="automata.deterministic_finite_automaton.DeterministicFiniteAutomaton">DeterministicFiniteAutomaton</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.omlin_giles_automata.OmlinGilesAutomata.get_b_automaton">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_b_automaton</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.omlin_giles_automata.OmlinGilesAutomata.get_b_automaton" title="Permalink to this definition">¶</a></dt>
+<dd><p>method with specification of the automaton B from the paper</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>automaton B from the paper</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="automata.html#automata.deterministic_finite_automaton.DeterministicFiniteAutomaton" title="automata.deterministic_finite_automaton.DeterministicFiniteAutomaton">DeterministicFiniteAutomaton</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.omlin_giles_automata.OmlinGilesAutomata.get_bz_automaton">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_bz_automaton</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.omlin_giles_automata.OmlinGilesAutomata.get_bz_automaton" title="Permalink to this definition">¶</a></dt>
+<dd><p>method with specification of the automaton B from the paper, with a stuttering symbol</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>automaton B from the paper, with a stuttering symbol</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="automata.html#automata.deterministic_finite_automaton.DeterministicFiniteAutomaton" title="automata.deterministic_finite_automaton.DeterministicFiniteAutomaton">DeterministicFiniteAutomaton</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-automata_definitions.other_automata">
+<span id="automata-definitions-other-automata-module"></span><h2>automata_definitions.other_automata module<a class="headerlink" href="#module-automata_definitions.other_automata" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="automata_definitions.other_automata.OtherAutomata">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">automata_definitions.other_automata.</span></code><code class="sig-name descname"><span class="pre">OtherAutomata</span></code><a class="headerlink" href="#automata_definitions.other_automata.OtherAutomata" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="automata_definitions.other_automata.OtherAutomata.get_a_ending_automaton">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_a_ending_automaton</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.other_automata.OtherAutomata.get_a_ending_automaton" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.other_automata.OtherAutomata.get_a_ending_with_cs_automaton">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_a_ending_with_cs_automaton</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.other_automata.OtherAutomata.get_a_ending_with_cs_automaton" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.other_automata.OtherAutomata.get_a_or_b_automaton">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_a_or_b_automaton</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.other_automata.OtherAutomata.get_a_or_b_automaton" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.other_automata.OtherAutomata.get_ab_automaton">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_ab_automaton</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.other_automata.OtherAutomata.get_ab_automaton" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.other_automata.OtherAutomata.get_ab_with_cs_automaton">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_ab_with_cs_automaton</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.other_automata.OtherAutomata.get_ab_with_cs_automaton" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.other_automata.OtherAutomata.get_all_automata">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_all_automata</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.other_automata.OtherAutomata.get_all_automata" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.other_automata.OtherAutomata.get_alternating_bit_protocol_automaton">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_alternating_bit_protocol_automaton</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.other_automata.OtherAutomata.get_alternating_bit_protocol_automaton" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.other_automata.OtherAutomata.get_alternating_bit_protocol_z_automaton">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_alternating_bit_protocol_z_automaton</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.other_automata.OtherAutomata.get_alternating_bit_protocol_z_automaton" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.other_automata.OtherAutomata.get_automaton_1">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_automaton_1</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.other_automata.OtherAutomata.get_automaton_1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.other_automata.OtherAutomata.get_automaton_1_minimized">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_automaton_1_minimized</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.other_automata.OtherAutomata.get_automaton_1_minimized" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.other_automata.OtherAutomata.get_automaton_2">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_automaton_2</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.other_automata.OtherAutomata.get_automaton_2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.other_automata.OtherAutomata.get_automaton_2_minimized">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_automaton_2_minimized</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.other_automata.OtherAutomata.get_automaton_2_minimized" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.other_automata.OtherAutomata.get_automaton_3">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_automaton_3</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.other_automata.OtherAutomata.get_automaton_3" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.other_automata.OtherAutomata.get_automaton_3_minimized">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_automaton_3_minimized</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.other_automata.OtherAutomata.get_automaton_3_minimized" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.other_automata.OtherAutomata.get_automaton_4">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_automaton_4</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.other_automata.OtherAutomata.get_automaton_4" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.other_automata.OtherAutomata.get_automaton_4_minimized">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_automaton_4_minimized</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.other_automata.OtherAutomata.get_automaton_4_minimized" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.other_automata.OtherAutomata.get_complex_ab_prefixed_automaton">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_complex_ab_prefixed_automaton</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.other_automata.OtherAutomata.get_complex_ab_prefixed_automaton" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.other_automata.OtherAutomata.get_dfa_1">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_dfa_1</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.other_automata.OtherAutomata.get_dfa_1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.other_automata.OtherAutomata.get_dfa_2">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_dfa_2</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.other_automata.OtherAutomata.get_dfa_2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.other_automata.OtherAutomata.get_dfa_3">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_dfa_3</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.other_automata.OtherAutomata.get_dfa_3" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.other_automata.OtherAutomata.get_dfa_4">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_dfa_4</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.other_automata.OtherAutomata.get_dfa_4" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.other_automata.OtherAutomata.get_dfa_5">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_dfa_5</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.other_automata.OtherAutomata.get_dfa_5" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.other_automata.OtherAutomata.get_different_ecommerce_automaton_NFA">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_different_ecommerce_automaton_NFA</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.other_automata.OtherAutomata.get_different_ecommerce_automaton_NFA" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.other_automata.OtherAutomata.get_dolzhenko_jonoska_automaton">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_dolzhenko_jonoska_automaton</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.other_automata.OtherAutomata.get_dolzhenko_jonoska_automaton" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.other_automata.OtherAutomata.get_ecommerce_automaton">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_ecommerce_automaton</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.other_automata.OtherAutomata.get_ecommerce_automaton" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.other_automata.OtherAutomata.get_empty_automaton">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_empty_automaton</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.other_automata.OtherAutomata.get_empty_automaton" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.other_automata.OtherAutomata.get_nfa_1">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_nfa_1</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.other_automata.OtherAutomata.get_nfa_1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.other_automata.OtherAutomata.get_nfa_2">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_nfa_2</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.other_automata.OtherAutomata.get_nfa_2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.other_automata.OtherAutomata.get_nfa_3">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_nfa_3</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.other_automata.OtherAutomata.get_nfa_3" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.other_automata.OtherAutomata.get_nfa_4">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_nfa_4</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.other_automata.OtherAutomata.get_nfa_4" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.other_automata.OtherAutomata.get_nfa_5">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_nfa_5</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.other_automata.OtherAutomata.get_nfa_5" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.other_automata.OtherAutomata.get_non_minimizable_automaton_1">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_non_minimizable_automaton_1</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.other_automata.OtherAutomata.get_non_minimizable_automaton_1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.other_automata.OtherAutomata.get_non_minimizable_automaton_2">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_non_minimizable_automaton_2</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.other_automata.OtherAutomata.get_non_minimizable_automaton_2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.other_automata.OtherAutomata.get_non_minimizable_automaton_3">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_non_minimizable_automaton_3</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.other_automata.OtherAutomata.get_non_minimizable_automaton_3" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.other_automata.OtherAutomata.get_nonempty_one_ending_automaton">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_nonempty_one_ending_automaton</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.other_automata.OtherAutomata.get_nonempty_one_ending_automaton" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.other_automata.OtherAutomata.get_nonempty_zero_ending_automaton">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_nonempty_zero_ending_automaton</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.other_automata.OtherAutomata.get_nonempty_zero_ending_automaton" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.other_automata.OtherAutomata.get_program_workflow_automaton">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_program_workflow_automaton</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.other_automata.OtherAutomata.get_program_workflow_automaton" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.other_automata.OtherAutomata.get_reduced_ecommerce_automaton">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_reduced_ecommerce_automaton</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.other_automata.OtherAutomata.get_reduced_ecommerce_automaton" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.other_automata.OtherAutomata.get_sigma_star_automaton">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_sigma_star_automaton</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.other_automata.OtherAutomata.get_sigma_star_automaton" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.other_automata.OtherAutomata.get_simpler_ab_prefixed_automaton">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_simpler_ab_prefixed_automaton</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.other_automata.OtherAutomata.get_simpler_ab_prefixed_automaton" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.other_automata.OtherAutomata.get_uneven_number_of_as_and_symbols_automaton">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_uneven_number_of_as_and_symbols_automaton</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.other_automata.OtherAutomata.get_uneven_number_of_as_and_symbols_automaton" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.other_automata.OtherAutomata.get_uneven_number_of_as_automaton">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_uneven_number_of_as_automaton</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.other_automata.OtherAutomata.get_uneven_number_of_as_automaton" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.other_automata.OtherAutomata.get_uneven_number_of_as_or_symbols_automaton">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_uneven_number_of_as_or_symbols_automaton</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.other_automata.OtherAutomata.get_uneven_number_of_as_or_symbols_automaton" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.other_automata.OtherAutomata.get_uneven_number_of_symbols_automaton">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_uneven_number_of_symbols_automaton</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.other_automata.OtherAutomata.get_uneven_number_of_symbols_automaton" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.other_automata.OtherAutomata.get_zero_ending_automaton">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_zero_ending_automaton</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.other_automata.OtherAutomata.get_zero_ending_automaton" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="automata-definitions-sample-nfas-module">
+<h2>automata_definitions.sample_nfas module<a class="headerlink" href="#automata-definitions-sample-nfas-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="automata-definitions-tomitas-grammar-modifications-module">
+<h2>automata_definitions.tomitas_grammar_modifications module<a class="headerlink" href="#automata-definitions-tomitas-grammar-modifications-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-automata_definitions.tomitas_grammars">
+<span id="automata-definitions-tomitas-grammars-module"></span><h2>automata_definitions.tomitas_grammars module<a class="headerlink" href="#module-automata_definitions.tomitas_grammars" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="automata_definitions.tomitas_grammars.TomitasGrammars">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">automata_definitions.tomitas_grammars.</span></code><code class="sig-name descname"><span class="pre">TomitasGrammars</span></code><a class="headerlink" href="#automata_definitions.tomitas_grammars.TomitasGrammars" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class containing automata from paper:
+Tomita, M. (1982).
+Dynamic Construction of Finite Automata from examples using Hill-climbing.
+Proceedings of the Fourth Annual Conference of the Cognitive Science Society
+(p./pp. 105–108), Ann Arbor, Michigan.</p>
+<dl class="py method">
+<dt>
+<code class="sig-name descname"><span class="pre">get_all_automata:</span> <span class="pre">list(DeterministicFiniteAutomaton)</span></code></dt>
+<dd><p>returns a list containing all automata defined in this class</p>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname"><span class="pre">get_automaton_1:</span> <span class="pre">DeterministicFiniteAutomaton</span></code></dt>
+<dd><p>returns the automaton 1 from the paper</p>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname"><span class="pre">get_automaton_2:</span> <span class="pre">DeterministicFiniteAutomaton</span></code></dt>
+<dd><p>returns the automaton 2 from the paper</p>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname"><span class="pre">get_automaton_3:</span> <span class="pre">DeterministicFiniteAutomaton</span></code></dt>
+<dd><p>returns the automaton 3 from the paper</p>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname"><span class="pre">get_automaton_4:</span> <span class="pre">DeterministicFiniteAutomaton</span></code></dt>
+<dd><p>returns the automaton 4 from the paper</p>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname"><span class="pre">get_automaton_5:</span> <span class="pre">DeterministicFiniteAutomaton</span></code></dt>
+<dd><p>returns the automaton 5 from the paper</p>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname"><span class="pre">get_automaton_6:</span> <span class="pre">DeterministicFiniteAutomaton</span></code></dt>
+<dd><p>returns the automaton 6 from the paper</p>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname"><span class="pre">get_automaton_7:</span> <span class="pre">DeterministicFiniteAutomaton</span></code></dt>
+<dd><p>returns the automaton 7 from the paper</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.tomitas_grammars.TomitasGrammars.get_all_automata">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_all_automata</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.tomitas_grammars.TomitasGrammars.get_all_automata" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method returning a list of all automata of the class</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>all automata defined in the class</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list(<a class="reference internal" href="automata.html#automata.deterministic_finite_automaton.DeterministicFiniteAutomaton" title="automata.deterministic_finite_automaton.DeterministicFiniteAutomaton">DeterministicFiniteAutomaton</a>)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.tomitas_grammars.TomitasGrammars.get_automaton_1">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_automaton_1</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.tomitas_grammars.TomitasGrammars.get_automaton_1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method with specification of the automaton 1 from the paper</p>
+<p>The first Tomita’s grammar is defined as the regular expresion: 1*</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>automaton 1 from the paper</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="automata.html#automata.deterministic_finite_automaton.DeterministicFiniteAutomaton" title="automata.deterministic_finite_automaton.DeterministicFiniteAutomaton">DeterministicFiniteAutomaton</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.tomitas_grammars.TomitasGrammars.get_automaton_2">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_automaton_2</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.tomitas_grammars.TomitasGrammars.get_automaton_2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method with specification of the automaton 2 from the paper</p>
+<p>The second Tomita’s grammar is defined as the regular expresion: (10)*</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>automaton 2 from the paper</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="automata.html#automata.deterministic_finite_automaton.DeterministicFiniteAutomaton" title="automata.deterministic_finite_automaton.DeterministicFiniteAutomaton">DeterministicFiniteAutomaton</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.tomitas_grammars.TomitasGrammars.get_automaton_3">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_automaton_3</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.tomitas_grammars.TomitasGrammars.get_automaton_3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method with specification of the automaton 3 from the paper</p>
+<p>The third Tomita’s grammar recognizes strings that don’t contain the regular expresion (1^(2n+1), 0^(2m+1)) as substring.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>automaton 3 from the paper</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="automata.html#automata.deterministic_finite_automaton.DeterministicFiniteAutomaton" title="automata.deterministic_finite_automaton.DeterministicFiniteAutomaton">DeterministicFiniteAutomaton</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.tomitas_grammars.TomitasGrammars.get_automaton_4">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_automaton_4</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.tomitas_grammars.TomitasGrammars.get_automaton_4" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method with specification of the automaton 4 from the paper</p>
+<p>The fourth Tomita grammar recognizes strings that don’t contain the regular expresion 000 as substring.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>automaton 4 from the paper</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="automata.html#automata.deterministic_finite_automaton.DeterministicFiniteAutomaton" title="automata.deterministic_finite_automaton.DeterministicFiniteAutomaton">DeterministicFiniteAutomaton</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.tomitas_grammars.TomitasGrammars.get_automaton_5">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_automaton_5</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.tomitas_grammars.TomitasGrammars.get_automaton_5" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method with specification of the automaton 5 from the paper</p>
+<p>The fifth Tomita’s grammar recognizes strings that have an even ammount of 01 and 10</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>automaton 5 from the paper</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="automata.html#automata.deterministic_finite_automaton.DeterministicFiniteAutomaton" title="automata.deterministic_finite_automaton.DeterministicFiniteAutomaton">DeterministicFiniteAutomaton</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.tomitas_grammars.TomitasGrammars.get_automaton_6">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_automaton_6</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.tomitas_grammars.TomitasGrammars.get_automaton_6" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method with specification of the automaton 6 from the paper</p>
+<p>The sixth Tomita’s grammar recognizes strings where (ammount of 0) - (amount of 1) = multiple of 3.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>automaton 5 from the paper</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="automata.html#automata.deterministic_finite_automaton.DeterministicFiniteAutomaton" title="automata.deterministic_finite_automaton.DeterministicFiniteAutomaton">DeterministicFiniteAutomaton</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="automata_definitions.tomitas_grammars.TomitasGrammars.get_automaton_7">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_automaton_7</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#automata_definitions.tomitas_grammars.TomitasGrammars.get_automaton_7" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method with specification of the automaton 7 from the paper</p>
+<p>The seventh Tomita’s grammargrammar is defined as the regular expresion: 0*1*0*1*
+:returns: automaton 7 from the paper
+:rtype: DeterministicFiniteAutomaton</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">automata_definitions package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-automata_definitions.bollig_habermehl_kern_leucker_automata">automata_definitions.bollig_habermehl_kern_leucker_automata module</a></li>
+<li><a class="reference internal" href="#module-automata_definitions.omlin_giles_automata">automata_definitions.omlin_giles_automata module</a></li>
+<li><a class="reference internal" href="#module-automata_definitions.other_automata">automata_definitions.other_automata module</a></li>
+<li><a class="reference internal" href="#automata-definitions-sample-nfas-module">automata_definitions.sample_nfas module</a></li>
+<li><a class="reference internal" href="#automata-definitions-tomitas-grammar-modifications-module">automata_definitions.tomitas_grammar_modifications module</a></li>
+<li><a class="reference internal" href="#module-automata_definitions.tomitas_grammars">automata_definitions.tomitas_grammars module</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="automata.html"
+                        title="previous chapter">automata package</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="base_types.html"
+                        title="next chapter">base_types package</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/automata_definitions.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="base_types.html" title="base_types package"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="automata.html" title="automata package"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">pythautomata 0.1.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">automata_definitions package</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2021, Franz Mayr, Federico Vilensky.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.5.1.
+    </div>
+  </body>
+</html>
